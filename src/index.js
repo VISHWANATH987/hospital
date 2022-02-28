@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+
+
+window.name = "nnn";
 
 ReactDOM.render(
   <React.StrictMode>
