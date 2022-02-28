@@ -40,7 +40,7 @@ function AddPatientProfile() {
 
         axios({
   method:'post',
-  url:'http://localhost:8080/patient',
+  url:'https://kls-hospital-management-system.herokuapp.com/patient',
   data: {
           id : Id,
           pname : Name,
