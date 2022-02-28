@@ -57,7 +57,7 @@ function App() {
         val === 1 ? <WelcomeTitleDiv/>:null
       }
       {
-        val === 2 && val2 != 3 ?  <LoginDiv/>: null
+        val === 2 && val2 != 3 ?  <HomeDiv/>: null
       }
       {
         val2 === 3 ?  <HomeDiv/>: null
