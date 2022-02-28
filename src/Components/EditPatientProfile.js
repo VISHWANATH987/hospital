@@ -69,7 +69,7 @@ console.log(error);
 
         axios({
   method:'get',
-  url:'http://localhost:8080/patient/'+Id,
+  url:'https://kls-hospital-management-system.herokuapp.com/patient/'+Id,
   data: {
           }
   })
