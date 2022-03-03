@@ -1212,11 +1212,14 @@ margin-right: 2rem;
 .ScheduleAppInnerDivBottom {
     flex: 15%;
     border-radius: 2rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .ScheduleAppInnerDivTopSelect {
     flex:25%;
-    background: lime;
+    background: white;
     display: flex;
     flex-direction: column;
 }
@@ -1275,9 +1278,9 @@ flex: 50%;
 
 .ScheduleAppInnerDivTopSlotTopslot8to9 {
 flex: 33%;
-background: yellow;
+background: white;
 display: flex;
-flex-direction: column; ;
+flex-direction: column; 
 }
 
 .ScheduleAppInnerDivTopSlotTopInner8to9 {
@@ -1286,11 +1289,12 @@ flex-direction: column; ;
     flex-direction: column;
     margin: 0.3rem;
     box-shadow: 4x 4px 2px 1px rgba(0, 0, 255, .2);
+    
 }
 
 .ScheduleAppInnerDivTopSlotTopslot9to10 {
     flex: 33%;
-    background: green;
+    background: white;
     display: flex;
 flex-direction: column;
 }
@@ -1305,7 +1309,7 @@ flex-direction: column;
 
 .ScheduleAppInnerDivTopSlotTopslot10to11 {
     flex: 33%;
-    background: #00C0F0;
+    background: white;
     display: flex;
 flex-direction: column;
 }
@@ -1320,7 +1324,7 @@ flex-direction: column;
 
 .ScheduleAppInnerDivTopSlotTopslot11to12 {
     flex: 33%;
-     background: #00C0F0;
+    background: white;
      display: flex;
 flex-direction: column;
     }
@@ -1333,7 +1337,7 @@ flex-direction: column;
     }
     .ScheduleAppInnerDivTopSlotTopslot12to1 {
         flex: 33%;
-        background: yellow;
+        background: white;
         display: flex;
 flex-direction: column;
     }
@@ -1347,7 +1351,7 @@ flex-direction: column;
     
     .ScheduleAppInnerDivTopSlotTopslot1to2 {
         flex: 33%;
-        background: green;
+        background: white;
         display: flex;
 flex-direction: column;
     }
@@ -1358,130 +1362,360 @@ flex-direction: column;
         margin: 0.3rem;
         box-shadow: 4x 4px 2px 1px rgba(0, 0, 255, .2);
     }
-.ScheduleAppInnerDivTopSlotTopslot8to9top {
-flex: 60%;
-background: #00C0F0;
-display: grid;
-align-items: center;
-justify-content: center;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-weight: bolder;
-font-size: large;
-}
-
-.ScheduleAppInnerDivTopSlotTopslot8to9bottom {
-flex: 40%;
-background: #ff33cc;
-display: grid;
-align-items: center;
-justify-content: center;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.ScheduleAppInnerDivTopSlotTopslot9to10top {
-    flex: 60%;
-    background: #00C0F0;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bolder;
-    font-size: large;
-    }
-    
-    .ScheduleAppInnerDivTopSlotTopslot9to10bottom {
-    flex: 40%;
-    background: #ff33cc;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    
-    .ScheduleAppInnerDivTopSlotTopslot10to11top {
+    .ScheduleAppInnerDivTopSlotTopslot8to9topBlueBackground {
         flex: 60%;
-        background: #00C0F0;
+        background: #00ffea;
         display: grid;
         align-items: center;
         justify-content: center;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: bolder;
         font-size: large;
-        }
-        
-        .ScheduleAppInnerDivTopSlotTopslot10to11bottom {
-        flex: 40%;
-        background: #ff33cc;
+    }
+
+    .ScheduleAppInnerDivTopSlotTopslot8to9topWhiteBackground {
+        flex: 60%;
+        background: #e3e6eb;
         display: grid;
         align-items: center;
         justify-content: center;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-        
+        font-weight: bolder;
+        font-size: large;
+    }
 
-        .ScheduleAppInnerDivTopSlotTopslot11to12top {
+.ScheduleAppInnerDivTopSlotTopslot8to9bottomOriginalBackground {
+flex: 40%;
+color: white;
+background: red;
+display: grid;
+align-items: center;
+justify-content: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: bolder;
+font-size: larger; 
+}
+
+.ScheduleAppInnerDivTopSlotTopslot8to9bottomLimeBackground {
+    flex: 40%;
+    color: white;
+    background: lime;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;   
+    font-size: larger; 
+}
+
+.ScheduleAppInnerDivTopSlotTopslot8to9bottomBlueBackground {
+    flex: 40%;
+    color: white;
+    background: rgb(0, 195, 255);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;   
+    font-size: larger;  }
+
+.ScheduleAppInnerDivTopSlotTopslot9to10topBlueBackground {
+    flex: 60%;
+    background: #00ffea;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.ScheduleAppInnerDivTopSlotTopslot9to10topWhiteBackground {
+    flex: 60%;
+    background: #e3e6eb;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: large;
+}
+        
+    .ScheduleAppInnerDivTopSlotTopslot9to10bottomOriginalBackground {
+        flex: 40%;
+        color: white;
+        background: red;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bolder;
+        font-size: larger; }
+    
+    .ScheduleAppInnerDivTopSlotTopslot9to10bottomLimeBackground {
+        flex: 40%;
+        color: white;
+        background: lime;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bolder;   
+        font-size: larger; }
+
+
+        .ScheduleAppInnerDivTopSlotTopslot9to10bottomBlueBackground {
+            flex: 40%;
+            color: white;
+            background: rgb(0, 195, 255);
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bolder;   
+            font-size: larger;  }
+
+
+        .ScheduleAppInnerDivTopSlotTopslot10to11topBlueBackground {
             flex: 60%;
-            background: #00C0F0;
+            background: #00ffea;
             display: grid;
             align-items: center;
             justify-content: center;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-weight: bolder;
             font-size: large;
-            }
-            
-            .ScheduleAppInnerDivTopSlotTopslot11to12bottom {
-            flex: 40%;
-            background: #ff33cc;
+        }
+
+        .ScheduleAppInnerDivTopSlotTopslot10to11topWhiteBackground {
+            flex: 60%;
+            background: #e3e6eb;
             display: grid;
             align-items: center;
             justify-content: center;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            }
-            
-
-            
-            .ScheduleAppInnerDivTopSlotTopslot12to1top {
+            font-weight: bolder;
+            font-size: large;
+        }
+        .ScheduleAppInnerDivTopSlotTopslot10to11bottomOriginalBackground {
+            flex: 40%;
+            color: white;
+            background: red;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bolder;
+            font-size: larger;   }
+        .ScheduleAppInnerDivTopSlotTopslot10to11bottomLimeBackground {
+            flex: 40%;
+            color: white;
+            background: lime;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bolder;   
+            font-size: larger;   }
+            .ScheduleAppInnerDivTopSlotTopslot10to11bottomBlueBackground {
+                flex: 40%;
+                color: white;
+                background: rgb(0, 195, 255);
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: bolder;   
+                font-size: larger;  }
+            .ScheduleAppInnerDivTopSlotTopslot11to12topBlueBackground {
                 flex: 60%;
-                background: #00C0F0;
+                background: #00ffea;
                 display: grid;
                 align-items: center;
                 justify-content: center;
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 font-weight: bolder;
                 font-size: large;
-                }
-                
-                .ScheduleAppInnerDivTopSlotTopslot12to1bottom {
-                flex: 40%;
-                background: #ff33cc;
+            }
+
+            .ScheduleAppInnerDivTopSlotTopslot11to12topWhiteBackground {
+                flex: 60%;
+                background: #e3e6eb;
                 display: grid;
                 align-items: center;
                 justify-content: center;
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                }
+                font-weight: bolder;
+                font-size: large;
+            }
+            
+            .ScheduleAppInnerDivTopSlotTopslot11to12bottomOriginalBackground {
+                flex: 40%;
+                color: white;
+                background: red;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: bolder;
+                font-size: larger;  }
+            
+            .ScheduleAppInnerDivTopSlotTopslot11to12bottomLimeBackground {
+                flex: 40%;
+                color: white;
+                background: lime;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: bolder;   
+                font-size: larger;  }
                 
+                .ScheduleAppInnerDivTopSlotTopslot11to12bottomBlueBackground {
+                    flex: 40%;
+                    color: white;
+                    background: rgb(0, 195, 255);
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-weight: bolder;   
+                    font-size: larger;  }
 
-                
 
-                .ScheduleAppInnerDivTopSlotTopslot1to2top {
-                    flex: 60%;
-                    background: #00C0F0;
+                    .ScheduleAppInnerDivTopSlotTopslot12to1topBlueBackground {
+                        flex: 60%;
+                        background: #00ffea;
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-weight: bolder;
+                        font-size: large;
+                    }
+        
+                    .ScheduleAppInnerDivTopSlotTopslot12to1topWhiteBackground {
+                        flex: 60%;
+                        background: #e3e6eb;
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-weight: bolder;
+                        font-size: large;
+                    }
+                .ScheduleAppInnerDivTopSlotTopslot12to1bottomOriginalBackground {
+                    flex: 40%;
+                    color: white;
+                    background: red;
                     display: grid;
                     align-items: center;
                     justify-content: center;
                     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                     font-weight: bolder;
-                    font-size: large;
-                    }
-                    
-                    .ScheduleAppInnerDivTopSlotTopslot1to2bottom{
+                    font-size: larger;  }
+                
+
+                .ScheduleAppInnerDivTopSlotTopslot12to1bottomLimeBackground {
                     flex: 40%;
-                    background: #ff33cc;
+                    color: white;
+                    background: lime;
                     display: grid;
                     align-items: center;
                     justify-content: center;
                     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-weight: bolder;   
+                    font-size: larger;    }
+                    
+                    .ScheduleAppInnerDivTopSlotTopslot12to1bottomBlueBackground {
+                        flex: 40%;
+                        color: white;
+                        background: rgb(0, 195, 255);
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-weight: bolder;   
+                        font-size: larger;  }
+
+                    .ScheduleAppInnerDivTopSlotTopslot1to2topBlueBackground {
+                        flex: 60%;
+                        background: #00ffea;
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-weight: bolder;
+                        font-size: large;
+                    }
+        
+                    .ScheduleAppInnerDivTopSlotTopslot1to2topWhiteBackground {
+                        flex: 60%;
+                        background: #e3e6eb;
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-weight: bolder;
+                        font-size: large;
                     }
                     
+
+                    .ScheduleAppInnerDivTopSlotTopslot1to2bottomOriginalBackground{
+                        flex: 40%;
+                        color: white;
+                        background: red;
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-weight: bolder;
+                        font-size: larger;  }
                     
+                    .ScheduleAppInnerDivTopSlotTopslot1to2bottomLimeBackground{
+                        flex: 40%;
+                        color: white;
+                        background:lime;
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-weight: bolder;   
+                        font-size: larger;   }
+
+                        .ScheduleAppInnerDivTopSlotTopslot1to2bottomBlueBackground {
+                            flex: 40%;
+                            color: white;
+                            background: rgb(0, 195, 255);
+                            display: grid;
+                            align-items: center;
+                            justify-content: center;
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-weight: bolder;   
+                            font-size: larger;  }
+
+.ScheduleAppInnerDivTopSlotTopInner8to9:hover {
+    box-shadow: 12px 12px 5px 5px rgba(0, 0, 255, .2);
+    transform: scale(1.06);
+    }
+    .ScheduleAppInnerDivTopSlotTopInner9to10:hover {
+        box-shadow: 12px 12px 5px 5px rgba(0, 0, 255, .2);
+        transform: scale(1.06);
+        }
+        .ScheduleAppInnerDivTopSlotTopInner10to11:hover {
+            box-shadow: 12px 12px 5px 5px rgba(0, 0, 255, .2);
+            transform: scale(1.06);
+            }
+            .ScheduleAppInnerDivTopSlotTopInner11to12:hover {
+                box-shadow: 12px 12px 5px 5px rgba(0, 0, 255, .2);
+                transform: scale(1.06);
+                }
+                .ScheduleAppInnerDivTopSlotTopInner12to1:hover {
+                    box-shadow: 12px 12px 5px 5px rgba(0, 0, 255, .2);
+                    transform: scale(1.06);
+                    }
+                    .ScheduleAppInnerDivTopSlotTopInner1to2:hover {
+                        box-shadow: 12px 12px 5px 5px rgba(0, 0, 255, .2);
+                        transform: scale(1.06);
+                        }
+                        
