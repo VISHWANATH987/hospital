@@ -21,6 +21,7 @@ import EditPatientProfile from './EditPatientProfile';
 import DoctorAddedSuccessDiv from './DoctorAddedSuccessDiv';
 import PatientDetailsUpdatedSuccessDiv from './PatientDetailsUpdatedSuccessDiv';
 import ScheduleAppointmentDiv from './ScheduleAppointmentDiv';
+import AppointmentScheduledSuccessfully from './AppointmentScheduledSuccessfully';
 
 function Sidebar() {
   const [show,SetShow] = useState("1");
@@ -128,7 +129,7 @@ function Sidebar() {
                  <li key={key} 
                 className='row'
                 id={window.name.charAt(0)==val.number? "active": ""}
-                onClick={()=>{SetShow(val.number); SetShow1("no") ; SetEditPatient("no"); SetScheduleApp("no");(window.name = val.number.toString()+"n")}}> 
+                onClick={()=>{SetShow(val.number); SetShow1("no") ; SetEditPatient("no"); SetScheduleApp("no");(window.name = val.number.toString()+"nnn")}}> 
                 <div id="icon">{val.icon}</div>
                 <div id='title'>{val.title}</div>        
                 </li>
@@ -144,7 +145,7 @@ function Sidebar() {
           show === "1" ?( (editPatient==="yes" ?
           ( (window.name.charAt(1)==="y" ? <PatientDetailsUpdatedSuccessDiv/> : <EditPatientProfile/> )):  
           (( show1 === "yes" ? ( (window.name).charAt(1)==="y" ? <PatientAddedSuccessDiv/> : <AddPatientProfile/> ) 
-          : (scheduleApp === "yes" ? <ScheduleAppointmentDiv/> :<FirstSideBarElementDiv/>) )))) : (show==2?((window.name).charAt(2)==="y"?<DoctorAddedSuccessDiv/>:<SecondSideBarElementDiv/>):(<ThirdSideBarElementDiv/>))
+          : (scheduleApp === "yes" ? (window.name.charAt(3)==="y"?<AppointmentScheduledSuccessfully/>:<ScheduleAppointmentDiv/> ) :<FirstSideBarElementDiv/>) )))) : (show==2?((window.name).charAt(2)==="y"?<DoctorAddedSuccessDiv/>:<SecondSideBarElementDiv/>):(<ThirdSideBarElementDiv/>))
         }
     </div> 
   </div>
