@@ -59,7 +59,7 @@ function SecondSideBarElementDiv() {
   })
   .then((response)=> {
   console.log(response);
-  response.status === 200 ? window.name="yyy" : alert("ERROR ");
+  response.status === 200 ? window.name="yyyn" : alert("ERROR ");
   }, (error) => {
   console.log(error);
   });
@@ -86,6 +86,7 @@ function SecondSideBarElementDiv() {
                 };
         })
   }
+
 
   return <div className='AddPatientProfileDiv'>
         <div className='AddPatientProfile'>
