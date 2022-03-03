@@ -54,7 +54,7 @@ function AddPatientProfile() {
   })
   .then((response)=> {
   console.log(response);
-  response.status === 200 ? window.name="yyn" : alert("ERROR ");
+  response.status === 200 ? window.name="yynn" : alert("ERROR ");
   }, (error) => {
   console.log(error);
   });
