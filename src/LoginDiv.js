@@ -29,7 +29,7 @@ data: {
 .then((response)=> {
 console.log(response);
 console.log(response.data);
-response.data === 'success' ? window.name="ynn" : alert("ENTER CORRECT CREDENTIALS !!!!");
+response.data === 'success' ? window.name="ynnn" : alert("ENTER CORRECT CREDENTIALS !!!!");
 }, (error) => {
 console.log(error);
 });
