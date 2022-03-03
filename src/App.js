@@ -1,9 +1,11 @@
 import './App.css';
+import Appbar from './Appbar';
 import Boxes from './Components/Boxes';
 import Hooks from './Components/Hooks';
 import Sidebar  from './Components/Sidebar';
 import Topbar from './Components/Topbar';
 import Sm from './Components/Sm';
+import Demo from './Demo';
 import Lsd from './Components/Lsd';
 import FirstSideBarElementDiv from './Components/FirstSideBarElementDiv';
 import SecondSideBarElementDiv from './Components/SecondSideBarElementDiv';
@@ -57,7 +59,7 @@ function App() {
         val === 1 ? <WelcomeTitleDiv/>:null
       }
       {
-        val === 2 && val2 != 3 ?  <HomeDiv/>: null
+        val === 2 && val2 != 3 ?  <LoginDiv/>: null
       }
       {
         val2 === 3 ?  <HomeDiv/>: null
