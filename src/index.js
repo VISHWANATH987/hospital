@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 
-window.name = "nnn";
+window.name = "nnnn";
 
 ReactDOM.render(
   <React.StrictMode>
