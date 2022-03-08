@@ -19,7 +19,7 @@ import TableRow from '@mui/material/TableRow';
     return <div className='ViewDoctorDiv'>
           <div className='ViewDoctorInnerDiv'>
           <div className='ViewDoctorInnerDivTitle'>
-                  LIST OF DOCTORS
+                  GENERATE BILLS
           </div>
           <div className='ViewDoctorInnerDivTop'>
          
