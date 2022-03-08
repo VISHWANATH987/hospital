@@ -1,10 +1,10 @@
 import React from 'react'
 import HomeIcon from '@mui/icons-material/Home';
-import MailIcon from '@mui/icons-material/Mail';
-import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
+import EventAvailableIcon from '@mui/icons-material/EventAvailable';
+import PersonAddIcon from '@mui/icons-material/PersonAdd';
+import EditIcon from '@mui/icons-material/Edit';
+import DescriptionIcon from '@mui/icons-material/Description';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import LogoutIcon from '@mui/icons-material/Logout';
-import AddAlert from '@mui/icons-material/AddAlert';
 
 export const SidebarData =  [
 
@@ -17,34 +17,34 @@ export const SidebarData =  [
 ,
 {
     title: "Add Doctor",
-    icon: <MailIcon/>,
+    icon: <AccountCircleIcon/>,
     link: "/adddoctor",
     number :  "2"
 }
 ,
 {
-    title: "View Doctors",
-    icon: <AirportShuttleIcon/>,
+    title: "Schedule Appt.",
+    icon: <EventAvailableIcon/>,
     link: "/viewdoctors",
     number :  "3"
 }
 ,
 {
-    title: "Account",
-    icon: <AccountCircleIcon/>,
+    title: "Add Patient",
+    icon: <PersonAddIcon/>,
     link: "/account",
     number :  "4"
 },
 {
-    title: "Notification",
-    icon: <AddAlert/>,
+    title: "Edit Patient",
+    icon: <EditIcon/>,
     link: "/notification",
     number :  "5"
 }
 ,
 {
-    title: "Logout",
-    icon: <LogoutIcon/>,
+    title: "Generate Bill",
+    icon: <DescriptionIcon/>,
     link: "/logout",
     number :  "6"
 }
