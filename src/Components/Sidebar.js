@@ -28,7 +28,7 @@ function Sidebar() {
   const [show1,SetShow1] = useState("no");
   const [editPatient , SetEditPatient] = useState("no");
   const [scheduleApp , SetScheduleApp] = useState("no");
-
+  const [generateBill , SetGenerateBill] = useState("no");
 
   const [val1,setVal1] = useState(1000);
   useEffect(()=>{
@@ -85,7 +85,7 @@ function Sidebar() {
       </div>
       </div>
       <div className='HomeRouterBottomRight'>
-      <div className='HomeRouterBottomLeftInsider'>
+      <div className='HomeRouterBottomLeftInsider' onClick={()=>{SetGenerateBill("yes");}}>
       <div className='HomeRouterInsiderHolder'>
                <div className='HomeRouterInsiderIconDiv'>
                  <DescriptionIcon className="HomeRouterInsiderIconGB"/>
@@ -129,7 +129,7 @@ function Sidebar() {
                  <li key={key} 
                 className='row'
                 id={window.name.charAt(0)==val.number? "active": ""}
-                onClick={()=>{SetShow(val.number); SetShow1("no") ; SetEditPatient("no"); SetScheduleApp("no");(window.name = val.number.toString()+"nnn")}}> 
+                onClick={()=>{SetShow(val.number); SetShow1("no") ; SetEditPatient("no"); SetScheduleApp("no");SetGenerateBill("no");(window.name = val.number.toString()+"nnn")}}> 
                 <div id="icon">{val.icon}</div>
                 <div id='title'>{val.title}</div>        
                 </li>
@@ -142,11 +142,11 @@ function Sidebar() {
     </div>
     <div className='middle-body-div'>
         {
-          show === "1" ?( (editPatient==="yes" ?
+          show === "1" ? (generateBill==="yes" ? (<SixthSideBarElementDiv/>) : ( (editPatient==="yes" ?
           ( (window.name.charAt(1)==="y" ? <PatientDetailsUpdatedSuccessDiv/> : <EditPatientProfile/> )):  
           (( show1 === "yes" ? ( (window.name).charAt(1)==="y" ? <PatientAddedSuccessDiv/> : <AddPatientProfile/> ) 
-          : (scheduleApp === "yes" ? (window.name.charAt(3)==="y"?<AppointmentScheduledSuccessfully/>:<ScheduleAppointmentDiv/> ) :<FirstSideBarElementDiv/>) )))) : (show==2?((window.name).charAt(2)==="y"?<DoctorAddedSuccessDiv/>:<SecondSideBarElementDiv/>):((show==3)?(window.name.charAt(3)==="y"?<AppointmentScheduledSuccessfully/>:<ScheduleAppointmentDiv/> ):((show==4)?((window.name).charAt(1)==="y" ? <PatientAddedSuccessDiv/> : <AddPatientProfile/>):((show==5)?((window.name.charAt(1)==="y" ? <PatientDetailsUpdatedSuccessDiv/> : <EditPatientProfile/>)):(<ThirdSideBarElementDiv/>)))))
-        }
+          : (scheduleApp === "yes" ? (window.name.charAt(3)==="y"?<AppointmentScheduledSuccessfully/>:<ScheduleAppointmentDiv/> ) :<FirstSideBarElementDiv/>) )))) ) :  (show=="2"?((window.name).charAt(2)==="y"?<DoctorAddedSuccessDiv/>:<SecondSideBarElementDiv/>):((show=="3")?(window.name.charAt(3)==="y"?<AppointmentScheduledSuccessfully/>:<ScheduleAppointmentDiv/> ):((show=="4")?((window.name).charAt(1)==="y" ? <PatientAddedSuccessDiv/> : <AddPatientProfile/>):((show=="5")?((window.name.charAt(1)==="y" ? <PatientDetailsUpdatedSuccessDiv/> : <EditPatientProfile/>)):(<SixthSideBarElementDiv/>)))))
+       }
     </div> 
   </div>
   
